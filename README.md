@@ -19,7 +19,7 @@ This file contains functions to extract features from audio, acoustic features o
 
 
 ### Results
-| | LSTM (without attention mechanism) | LSTM (with attention mechanism |
-| RMSE | 9.61 | - |
-| MAE | 7.76 | - |
+|      | LSTM (without attention mechanism) | LSTM (with attention mechanism |
+| RMSE | 9.61                               |              -                 |
+| MAE  | 7.76                               |              -                 |
 
