@@ -18,6 +18,14 @@ The default test set contains recordings of 168 speakers (112 men, 56 female).
   
 This file contains functions to extract features from audio, acoustic features of 80 filetr bank energies and 3 pitch features.
 
+* model_1, max_timestep 
+
+Necessary files for testing the model.
+
+* testing.py
+
+Python file, where you can check how model works of yours audio files.
+
 
 ### Results
 |      | LSTM (without attention mechanism) | LSTM (with attention mechanism |
