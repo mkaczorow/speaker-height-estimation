@@ -12,6 +12,17 @@ TIMIT dataset was used in this project to create model for estimate speaker's he
 
 The default test set contains recordings of 168 speakers (112 men, 56 female).
 
+### Model
+As in the publication, the model is built on the basis of the lstm network with an attentional layer. at first, from the audio recording, the program extracts features - in the publication it is the filter bank energies and pitch, in my case it is only filter bank energies, because the kaldi program used in the model system for the extraction of pitch features, does not synchronize with the Windows system. Then the features are encoded in front of the long short-term memory network and passed to the attention layer. As a final step, the values are passed to the dense layer to show the speaker's height prediction. 
+
+
+### Results
+|      | LSTM (without attention mechanism) | LSTM (with attention mechanism |
+| ---- | ---------------------------------- | ------------------------------ |
+| RMSE | 9.61                               |              9.56              |
+| MAE  | 7.76                               |              7.69              |
+
+In the above results, you can see that the mechanism affects the results of the experiment. The results obtained in the publication also show the positive effect of the attentional mechanism on the experiment.
 
 ### Repository files:
 * features.py
@@ -25,11 +36,4 @@ Necessary files for testing the model.
 * testing.py
 
 Python file, where you can check how model works of yours audio files.
-
-
-### Results
-|      | LSTM (without attention mechanism) | LSTM (with attention mechanism |
-| ---- | ---------------------------------- | ------------------------------ |
-| RMSE | 9.61                               |              9.56              |
-| MAE  | 7.76                               |              7.69              |
 
