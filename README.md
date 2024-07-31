@@ -17,12 +17,12 @@ As in the publication, the model is built on the basis of the lstm network with 
 
 
 ### Results
-|      | LSTM (without attention mechanism) | LSTM (with attention mechanism |
+|      | LSTM (without attention mechanism) | LSTM (with attention mechanism)|
 | ---- | ---------------------------------- | ------------------------------ |
 | RMSE | 9.61                               |              9.56              |
 | MAE  | 7.76                               |              7.69              |
 
-In the above results, you can see that the mechanism affects the results of the experiment. The results obtained in the publication also show the positive effect of the attentional mechanism on the experiment.
+In the above results as well as in the paper, you can see that the attention mechanism positive affects the results of the experiment. The attention mechanism was introduced to deal with forgetting the parts of long sequences. 
 
 ### Repository files:
 * features.py
