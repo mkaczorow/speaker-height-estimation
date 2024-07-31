@@ -23,6 +23,10 @@ As in the publication, the model is built on the basis of the lstm network with 
 | MAE  | 7.76                               |              7.69              |
 
 In the above results as well as in the paper, you can see that the attention mechanism positive affects the results of the experiment. The attention mechanism was introduced to deal with forgetting the parts of long sequences. 
+In publication they achieved a RMSE of ~6cm, in my study I recorded an RMSE of ~9cm. The difference may be due to the fact that I did not extract pitch-related features.
+
+link to the results in csv file: https://github.com/mkaczorow/speaker-height-estimation/blob/main/result.csv
+
 
 ### Repository files:
 * features.py
@@ -37,3 +41,6 @@ Necessary files for testing the model.
 
 Python file, where you can check how model works of yours audio files.
 
+* result.csv
+
+CSV file with results of the experiment
